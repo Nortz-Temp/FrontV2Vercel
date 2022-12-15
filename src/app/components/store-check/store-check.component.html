@@ -3,15 +3,16 @@
 </div>
 <div class="menu fadeInDown">
 
-  <div *ngIf="!menager" class="item fadeIn second" ENABLE: [routerLink]="['/chooseObject/resolveFeedbacks']">
+  <div *ngIf="!menager" class="item fadeIn second" [routerLink]="['/chooseObject/resolveFeedbacks']">
     <p>
       <img src="../../../assets/belo.png" width="50px" height="50px"
         style="margin-top:15px; float:left; margin-left:20px;">
     </p>
     <div style="justify-content: center;margin-right: 30px;">RESOLVE FEEDBACKS</div>
-  </div>
 
-  <div *ngIf="menager" class="item fadeIn first" ENABLE: [routerLink]="['/chooseObject/addStoreCheck']">
+    </div>
+
+  <div *ngIf="menager" class="item fadeIn first" [routerLink]="['/chooseObject/addStoreCheck']">
     <p>
       <img src="../../../assets/belo.png" width="50px" height="50px"
         style="margin-top:15px; float:left; margin-left:20px;">
